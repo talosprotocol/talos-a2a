@@ -3,8 +3,9 @@ from __future__ import annotations
 from .audit import MerkleAuditTree, MerkleReceipt
 from .capability import CapabilityToken
 from .encryption import E2EESession, EncryptedEnvelope
-from .identity import TalosDid, build_authenticated_agent_card
+from .identity import TalosDid, build_authenticated_agent_card, verify_agent_card
 from .middleware import TalosA2AMiddleware
+from .server import mount_agent_card
 
 __version__ = "1.0.0"
 
@@ -18,4 +19,6 @@ __all__ = [
     "TalosDid",
     "__version__",
     "build_authenticated_agent_card",
+    "mount_agent_card",
+    "verify_agent_card",
 ]
